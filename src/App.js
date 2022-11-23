@@ -36,6 +36,12 @@ const App = () => {
       allItemRef.current -= tmpData[index].totalPrice;
     }
 
+    const hasFalseData = tmpData.map((item) => item.checked);
+
+    if (hasFalseData.includes(false)) {
+      checkboxAllItemRef.current.checked = false;
+    }
+
     totalItemRef.current = allItemRef.current === 0 ? 0 : allItemRef.current + 3000;
 
     setItemData(tmpData);
