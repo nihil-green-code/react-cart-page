@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <link rel="stylesheet" href="./styles/cart.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <title>React App</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="title-logo">
+      <span>KALL</span>
+      <a href="../index.html">
+        <img src="../images/kall-logo.png" alt="KALL 로고">
+      </a>
+    </h1>
+
+    <nav>
+      <ul class="main-nav">
+        <li>
+          <a href="../product/">주문제작</a>
+        </li>
+        <li>
+          <a href="../design/">디자인</a>
+        </li>
+        <li>
+          <a href="../etc/">ETC</a>
+        </li>
+        <li>
+          <a href="../community/guide/">커뮤니티</a>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="search" name="keyword" placeholder="검색어를 입력하세요">
+    <ul class="user-menu">
+      <li>
+        <a href="../sighin/" title="로그인">
+          <span class="visually-hidden">로그인</span>
+          <i class="fas fa-key"></i>
+        </a>
+      </li>
+      <li>
+        <a href="../sighup/" title="회원가입">
+          <span class="visually-hidden">회원가입</span>
+          <i class="fas fa-user-plus"></i>
+        </a>
+      </li>
+      <li>
+        <a href="../cart/" title="장바구니">
+          <span class="visually-hidden">장바구니</span>
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- ==================== 윤지 코드 ==================== -->
+    <h2>장바구니</h2>
+    <div class="flow">
+      <p class="now">01 장바구니</p>
+      <p class="now arrow front"></p>
+      <p class="not-now">02 주문 / 결제</p>
+      <p class="not-now arrow"></p>
+      <p class="not-now">03 주문완료</p>
+    </div>
+
+    <form id="cart-form"></form>
+  </main>
+
+  <footer>
+    <div class="links">
+      <a href="../agreement">이용약관</a>
+      <span>|</span><a href="../privacy">개인정보처리방침</a>
+      <span>|</span><a href="../community/guide/">고객센터</a>
+    </div>
+    <address class="site-address">
+      <p>
+        <small>
+          안내전화: 1588-9780
+          <span>|</span> 상호 : KALL
+        </small>
+      </p>
+    </address>
+    <div class="site-info">
+      <p>
+        <small>
+          사업장소재지 : 경기 성남시 분당구 돌마로 46 (광천빌딩 5층)
+        </small>
+      </p>
+      <p>
+        <small>
+          사업자등록번호 : 214-86-26812
+          <span>|</span> 대표이사: 김상곤
+        </small>
+      </p>
+      <p>
+        <small>
+          COPYRIGHT <i class="far fa-copyright"></i> KALL. ALL RIGHTS RESERVED.
+        </small>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

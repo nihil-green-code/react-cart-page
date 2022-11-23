@@ -1,0 +1,208 @@
+/* ==================== 장바구니 ==================== */
+main {
+  color: var(--black-3);
+}
+
+main h2 {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333333;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ==================== 주문 흐름 ==================== */
+main div.flow {
+  font-size: 1.5rem;
+  display: flex;
+  line-height: 70px;
+  background-color: var(--white-f9);
+  margin-bottom: 50px;
+}
+
+main div.flow p {
+  flex: 1;
+  text-align: center;
+}
+
+main div.flow p.arrow {
+  flex: 0 0 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: auto;
+}
+
+main div.flow p.arrow::before {
+  content: '';
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  rotate: 45deg;
+  left: -110%;
+  border: 1px solid var(--c-point);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+main div.flow p.now.arrow.back,
+main div.flow p.now.arrow.front::before {
+  background-color: var(--c-point);
+}
+
+main div.flow p.now.arrow.back::before {
+  background-color: var(--white-f9);
+}
+
+main div.flow p.now:not(.arrow) {
+  background-color: var(--c-point);
+  color: var(--black-3);
+  font-weight: 900;
+}
+
+main div.flow p.not-now {
+  color: #888888;
+}
+
+/* ==================== 테이블 ==================== */
+div.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-bottom: 50px;
+}
+
+div.cart div.line,
+div.cart div.header-line {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+
+div.header-line div.line-header,
+div.line div.line-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+div.header-line div.line-header.w25,
+div.line div.line-content.w25 {
+  flex: 0 25px;
+}
+
+div.header-line div.line-header.w150,
+div.line div.line-content.w150 {
+  flex: 0 150px;
+}
+
+div.line div.line-content.w150 {
+  position: relative;
+  gap: 10px;
+}
+
+div.line div.line-content.w150 button {
+  all: unset;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+}
+
+div.line div.line-content.w150 button:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
+}
+
+div.line div.line-content.w150 button.decrease {
+  left: 20px;
+}
+
+div.line div.line-content.w150 button.increase {
+  right: 20px;
+}
+
+div.header-line div.line-header {
+  background-color: var(--c-point);
+  color: var(--black-3);
+  font-weight: 700;
+}
+
+div.line div.line-content {
+  background-color: var(--white-f9);
+}
+
+/* ==================== 금액 ==================== */
+#cash {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  margin-bottom: 1px;
+}
+
+#cash>p {
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  background-color: var(--white-f9);
+}
+
+#cash>p span,
+#all span {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+#all {
+  background-color: var(--c-point);
+  color: var(--black-3);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+/* ==================== 버튼 ==================== */
+form>div>input {
+  all: unset;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: var(--c-point);
+  color: var(--black-3);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+div.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+form>div>input:hover {
+  background-color: var(--c-point-h);
+  color: var(--white-f);
+}
+
+/* ==================== 상품 선택 체크박스 크기 ==================== */
+div.line-header:nth-of-type(1),
+div.line-content:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.line-header:nth-of-type(1) input[type=checkbox],
+div.line-content:nth-of-type(1) input[type=checkbox] {
+  width: 25px;
+  height: 25px;
+}

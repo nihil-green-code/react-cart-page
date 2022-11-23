@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+:root {
+  scroll-behavior: smooth;
+  --c-base: #d7e6ff;
+  --c-point: #d7e6ff;
+  --c-point-h: #acccff;
+  --c-point-n: #e9f1ff;
+
+  --c-point2: #fdfcc8;
+  --c-point2-h: #b6b57a;
+  --c-point3: #fff0fd;
+  --c-point3-h: #f9daf5;
+  --c-link: #3897f5;
+  --c-link-h: #1a7bdc;
+
+  --white-f: #ffffff;
+  --white-f9: #f9f9f9;
+  --white-e: #eeeeee;
+  --white-d: #dddddd;
+  --black-3: #333333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'nanumsquare', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  /* display: none;
+  width: 0;
+  height: 0; */
+  margin-right: 20px;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  /* display: none; */
+  margin-right: 20px;
+}

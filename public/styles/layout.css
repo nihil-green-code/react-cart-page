@@ -1,0 +1,173 @@
+/* ==================== 헤더 ==================== */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+  padding: 40px 10px;
+  background-color: var(--c-point-h);
+}
+
+.title-logo span {
+  display: inline-block;
+  text-indent: -9999em;
+}
+
+.title-logo img {
+  margin-left: 40px;
+  width: 120px;
+}
+
+.user-menu {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 40px;
+}
+
+.user-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--white-f);
+  color: var(--white-f);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.user-menu li a:hover {
+  border: 2px solid var(--c-point3);
+  color: var(--c-point3);
+}
+
+/* ==================== 검색바 ==================== */
+header input {
+  all: unset;
+  background-color: var(--white-f9);
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-right: 30px;
+  border-radius: 25px;
+  width: 250px;
+  background-image: url(../images/magnifying-glass-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 25px 25px;
+  box-sizing: border-box;
+}
+
+/* ==================== 헤더 종료 ==================== */
+
+/* ==================== 메뉴 ==================== */
+header nav {
+  flex: 1 0;
+  margin-left: 300px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.main-nav li {
+  flex-basis: 150px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  min-width: 74px;
+}
+
+.main-nav>li a {
+  display: block;
+  color: var(--white-f);
+  padding: 10px 0;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 5px dotted var(--white-f);
+}
+
+.main-nav>li a:hover {
+  border-bottom-style: solid;
+}
+
+/* ==================== 메뉴 종료 ==================== */
+
+/* ==================== 메인 ==================== */
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* ==================== 메인 종료 ==================== */
+
+/* ==================== 푸터 ==================== */
+
+footer {
+  margin-top: 50px;
+  background-color: var(--black-3);
+  color: var(--white-e);
+  text-align: center;
+  padding: 10px;
+}
+
+footer .links {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links a {
+  color: var(--c-link);
+}
+
+footer .links a:hover {
+  color: var(--c-link-h);
+  text-decoration: underline;
+}
+
+footer .links span,
+footer span {
+  margin: 0 5px;
+}
+
+footer .site-address {
+  margin-bottom: 5px;
+  font-style: normal;
+}
+
+footer .site-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .site-info p:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+footer .site-info p:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+/* ==================== 푸터 종료 ==================== */
+
+/* ==================== 패스워드 폰트 변경 ==================== */
+input[type="password"] {
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+input[type="password"]::placeholder {
+  font-family: 'nanumsquare', sans-serif;
+}
